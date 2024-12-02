@@ -18,16 +18,17 @@ mkdir dayXX
 mkdir dayXX/part1
 mkdir dayXX/part2
 ```
+
 4. Copy the Makefile template into each of the subdirectories, replacing 'PARTX' with 'part1' or 'part2'.
 ```bash
 cp Makefile.template dayXX/part1/Makefile
 cp Makefile.template dayXX/part2/Makefile
 ```
 
-5. Create a new C++ source file in each subdirectory called `main.cpp`.
+5. Copy the main.template into each of the subdirectories and name it `main.cpp`.
 ```bash
-touch dayXX/part1/main.cpp
-touch dayXX/part2/main.cpp
+cp main.template dayXX/part1/main.cpp
+cp main.template dayXX/part2/main.cpp
 ```
 
 6. Write your solution in the `main.cpp` files, add other source files and headers as needed, ensuring to update the Makefile.

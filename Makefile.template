@@ -14,7 +14,7 @@ SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # Executable name
-PART1 = part1
+PARTX = partX
 
 # Default PARTX
 all: $(PARTX)
@@ -29,7 +29,7 @@ $(PARTX): $(OBJS)
 
 # Clean up
 clean:
-	rm -f $(OBJS) $(PART1)
+	rm -f $(OBJS) $(PARTX)
 
 # Phony targets
 .PHONY: all clean

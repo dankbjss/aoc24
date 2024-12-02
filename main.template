@@ -1,0 +1,19 @@
+#include <iostream>
+#include <fstream>
+
+int main() 
+{
+    std::ifstream input;
+
+    input.open("../input.txt");
+
+    if (!input)
+    {
+        std::cerr << "Could not open file" << std::endl;
+        return 1;
+    }
+
+    input.close()
+
+    return 0;
+}
