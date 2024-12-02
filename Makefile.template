@@ -16,12 +16,12 @@ OBJS = $(SRCS:.cpp=.o)
 # Executable name
 PART1 = part1
 
-# Default PART1
-all: $(PART1)
+# Default PARTX
+all: $(PARTX)
 
 # Linking
-$(PART1): $(OBJS)
-	$(CXX) $(LDFLAGS) -o $(PART1) $(OBJS)
+$(PARTX): $(OBJS)
+	$(CXX) $(LDFLAGS) -o $(PARTX) $(OBJS)
 
 # Compilation
 %.o: %.cpp
