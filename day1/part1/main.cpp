@@ -6,19 +6,18 @@
 
 int main()
 {
-    std::vector<int> left;
-    std::vector<int> right;
-    int leftNumber, rightNumber;
-    std::ifstream input;
-    std::vector<int> totals;
-
-    input.open("../input.txt");
+    std::ifstream input("../input.txt");
 
     if (!input)
     {
         std::cerr << "Could not open file" << std::endl;
         return 1;
     }
+    
+    std::vector<int> left;
+    std::vector<int> right;
+    int leftNumber, rightNumber;
+    std::vector<int> totals;
 
     while (input >> leftNumber >> rightNumber)
     {

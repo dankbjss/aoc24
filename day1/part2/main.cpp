@@ -5,19 +5,18 @@
 
 int main()
 {
-    std::vector<int> left;
-    std::vector<int> right;
-    int leftNumber, rightNumber;
-    std::ifstream input;
-    int similarity = 0;
-
-    input.open("../input.txt");
+    std::ifstream input("../input.txt");
 
     if (!input)
     {
         std::cerr << "Could not open file" << std::endl;
         return 1;
     }
+    
+    std::vector<int> left;
+    std::vector<int> right;
+    int leftNumber, rightNumber;
+    int similarity = 0;
 
     while (input >> leftNumber >> rightNumber)
     {
