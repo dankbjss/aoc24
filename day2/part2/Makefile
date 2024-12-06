@@ -14,14 +14,14 @@ SRCS = main.cpp ../helpers.cpp
 OBJS = $(patsubst %.cpp,%.o,$(notdir $(SRCS)))
 
 # Executable name
-PART1 = part1
+PART2 = part2
 
 # Default PARTX
-all: $(PART1)
+all: $(PART2)
 
 # Linking
-$(PART1): $(OBJS)
-	$(CXX) $(LDFLAGS) -o $(PART1) $(OBJS)
+$(PART2): $(OBJS)
+	$(CXX) $(LDFLAGS) -o $(PART2) $(OBJS)
 
 # Compilation
 %.o: ../%.cpp
@@ -32,7 +32,7 @@ $(PART1): $(OBJS)
 
 # Clean up
 clean:
-	rm -f $(OBJS) $(PART1)
+	rm -f $(OBJS) $(PART2)
 
 # Phony targets
 .PHONY: all clean

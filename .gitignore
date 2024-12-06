@@ -1,4 +1,6 @@
 .vscode/
+
+input.txt
 **/*.o
 **/part1
 **/part2

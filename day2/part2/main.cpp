@@ -25,11 +25,29 @@ int main()
 
         if (reportIsSafe(report, order))
         {
+            std::cout << "Safe: ";
+            printVector(report);
+
             safeCount++;
+        }
+        else
+        {
+            if (problemDampener(report))
+            {
+                std::cout << "Safe: ";
+                printVector(report);
+
+                safeCount++;
+            }
+            else
+            {
+                std::cout << "Unsafe: ";
+                printVector(report);
+            }
         }
     }
 
-    std::cout << safeCount << std::endl;
+    std::cout << "Safe Reports: " << safeCount << std::endl;
 
     return 0;
 }
